@@ -1,0 +1,7 @@
+[
+  { "label": "😡", "name": "angry", "value": 0 },
+  { "label": "🙁", "name": "sad", "value": 0 },
+  { "label": "😑", "name": "neutral", "value":0 },
+  { "label": "🙂", "name": "happy", "value": 0 },
+  { "label": "😎", "name": "cool", "value": 0 }
+]

@@ -1,0 +1,18 @@
+{
+  "name": "electron-touchbar-chart",
+  "version": "0.1.0",
+  "description": "An example Electron project that displays Touch Bar values using Chart.js",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --debug"
+  },
+  "author": "jsantiago",
+  "license": "MIT",
+  "dependencies": {
+    "chart.js": "^2.5.0",
+    "electron-default-menu": "^1.0.1",
+    "electron-prebuilt-compile": "^1.6.6",
+    "lodash": "^4.17.4"
+  }
+}

@@ -10,21 +10,21 @@ let touchBarConfig = [];
 // Generate TouchBar config
 config.forEach(function(item){
   touchBarConfig.push(
-    new TouchBarPopover({
-      label: item.label,
-      items: [
-        new TouchBarSlider({
-          label: item.label,
-          value: item.value,
-          minValue: 0,
-          maxValue: 100,
-          change: function(newValue) {
-            win.webContents.send('update', item.name, newValue);
-          }
-        })
-      ]
-    })
-  )
+      new TouchBarPopover({
+        label: item.label,
+        items: [
+          new TouchBarSlider({
+            label: item.label,
+            value: item.value,
+            minValue: 0,
+            maxValue: 100,
+            change: function(newValue) {
+              win.webContents.send('update', item.name, newValue);
+            }
+          })
+        ]
+      })
+      )
 });
 
 const touchBar = new TouchBar(touchBarConfig);
@@ -42,9 +42,9 @@ app.on('ready', function(){
 
   win.setTouchBar(touchBar)
 
-  win.on('closed', function(){
-    win = null;
-  });
+    win.on('closed', function(){
+      win = null;
+    });
 
   // Load main HTML file
   win.loadURL(`file://${__dirname}/index.html`);
